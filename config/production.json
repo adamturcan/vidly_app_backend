@@ -1,4 +1,4 @@
 {
     "jwtPrivateKey":"",
-    "db":"mongodb+srv://Ballmici:12345@cluster0.kenya.mongodb.net/test"
+    "db":""
 }
