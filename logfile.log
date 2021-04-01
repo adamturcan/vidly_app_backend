@@ -4768,3 +4768,20 @@
 {"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:39:08.840Z"}
 {"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:39:09.651Z"}
 {"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:39:09.669Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:39:10.543Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:39:10.572Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:17.183Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp...","timestamp":"2021-04-01T16:44:17.214Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:44:31.817Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:31.854Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:44:32.432Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:32.467Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:32.676Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:44:32.702Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:33.249Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:44:33.259Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:34.022Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:44:34.060Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:34.578Z"}
+{"level":"info","message":"Connected to mongodb://localhost/MyMovieApp_tests...","timestamp":"2021-04-01T16:44:34.612Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2021-04-01T16:44:38.673Z"}
