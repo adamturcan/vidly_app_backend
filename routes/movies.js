@@ -1,4 +1,5 @@
 const auth = require('../middleware/auth')
+const admin = require('../middleware/admin')
 const express = require('express');
 const MovieApp = express.Router();
 const Movie = require('../models/movie')
@@ -48,6 +49,7 @@ MovieApp.get("/:id",async(req,res)=>{
 
 MovieApp.put('/:id',auth,async(req,res)=>{
 
+    
 if(!req.params.id.match(/^[0-9a-fA-F]{24}$/)){
     return res.status(404).send('Movie not found in our list')
 }
@@ -73,7 +75,7 @@ res.send( movie)
 
 
 
-MovieApp.delete('/:id',auth,async(req,res)=>{
+MovieApp.delete('/:id',[auth,admin],async(req,res)=>{
 
  if(!req.params.id.match(/^[0-9a-fA-F]{24}$/)){
      return res.status(404).send('Movie not found in our list :(')

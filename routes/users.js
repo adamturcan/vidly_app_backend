@@ -13,7 +13,8 @@ res.send(user)
 
 
  UserApi.post('/',async(req,res)=>{
- 
+      console.log(req)
+
     const {error} = userValidation(req.body)
     if(error) return res.status(400).send(error.details[0].message)
     
@@ -30,7 +31,7 @@ res.send(user)
     
     const token = user.generateAuthToken()
 
-    res.header('x-auth-token',token).send(_.pick(user,['_id','name','email']))
+    res.header('x-auth-token',token).header("access-control-expose-headers","x-auth-token").send(_.pick(user,['_id','name','email']))
 
  })
 

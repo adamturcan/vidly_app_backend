@@ -30,7 +30,7 @@ res.send(genre)
 genres.post('/',[auth,validate(GenreValidation)],async(req,res)=>{
 
     let genre = new Genre ( {
-      genre: req.body.genre
+     name: req.body.name
     })
     genre = genre.save()
     res.send(await genre)
@@ -43,7 +43,7 @@ genres.put('/:id',[auth,validate(GenreValidation)],async (req,res)=>{
     return res.status(404).send('Genre not found in our list')
   }
     
-  const genre = await Genre.findByIdAndUpdate(req.params.id,{genre:req.body.genre},{new:true})
+  const genre = await Genre.findByIdAndUpdate(req.params.id,{genre:req.body.name},{new:true})
    
 
   if(!genre) return res.status(404).send('Genre not found in our list')

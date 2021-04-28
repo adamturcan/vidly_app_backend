@@ -1,0 +1,12 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Document
+form(action="/api/users", method="post")
+  label(for="name") zadajte meno
+  input#name(type="text", name="name")
+  label(for="email") zadajte email
+  input#email(type="email",name="email")
+  label(for="password") zadajte heslo
+  input#password(type="password",name="password")
+  button(type="submit") send req
