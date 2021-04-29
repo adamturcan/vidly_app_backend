@@ -5,7 +5,8 @@ function userValidation(user){
 const Schema = joi.object({
 name: joi.string().required().min(3),
 email: joi.string().required().email(),
-password: joi.string().required().min(5)
+password: joi.string().required().min(5),
+liked:joi.array()
 })
 
 return Schema.validate(user)

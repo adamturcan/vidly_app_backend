@@ -18,7 +18,8 @@ const userSchema = new mongoose.Schema({
         required:true,
         minlength:5
     },
-    isAdmin:Boolean
+    isAdmin:Boolean,
+    liked:[String],
     })
 
 userSchema.methods.generateAuthToken = function() {
