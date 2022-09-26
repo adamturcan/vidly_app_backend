@@ -10,6 +10,7 @@ CustomerApp.get("/", async (req, res) => {
 });
 
 CustomerApp.post("/", auth, async (req, res) => {
+  console.log("this is working");
   const { error } = CustomerValidation(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -17,6 +18,7 @@ CustomerApp.post("/", auth, async (req, res) => {
     isGold: req.body.isGold,
     name: req.body.name,
     phone: req.body.phone,
+    rents: [],
   });
   customer = customer.save().catch(() => res.send("invalid format"));
   res.send(await customer);
@@ -42,14 +44,12 @@ CustomerApp.put("/:id", auth, async (req, res) => {
   const { error } = CustomerValidation(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const customer = await Customer.findByIdAndUpdate(
-    req.params.id,
-    { isGold: req.body.isGold, name: req.body.name, phone: req.body.phone },
-    { new: true }
-  );
-
+  let customer = await Customer.findById(req.params.id);
   if (!customer) return res.status(404).send("customer not found :(");
 
+  customer.rents = [...req.body.rents];
+  customer.isGold = req.body.isGold;
+  await customer.save();
   res.send(customer);
 });
 

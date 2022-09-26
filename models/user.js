@@ -16,6 +16,7 @@ const customerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  rents: [String],
 });
 
 const userSchema = new mongoose.Schema({
